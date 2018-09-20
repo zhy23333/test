@@ -19,3 +19,27 @@ git status
 git add -A
 git commit -m "update"
 ```
+
+## 推送所有更改到远程服务器
+```
+-- 第一次推送
+git push -u origin master
+-- 后面的推送
+git push 
+```
+
+## 版本回退
+```
+git reflog
+git reset --hard <hash>
+```
+
+## 分支管理（当你没有把握修改正式版的软件不产生BUG的时候创建一个子分支，切换到子分支和正式版软件并行开发，不会影响主分支的开发,当子分支开发完成并且测试没有BUG的时候再合并到主分支上，相当于测试版开发）
+```
+-- 创建分支
+git branch chy
+-- 切换分支
+git checkout chy
+-- 合并分支（切换到主分区执行这句话）
+git merge 
+```
